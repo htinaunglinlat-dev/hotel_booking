@@ -1,0 +1,498 @@
+:root{
+   --white: #fff;
+   --white1: #ebf3ff;
+
+   --blue: #003580;
+   --blue1: #0071c2;
+
+   --yellow: #febb02;
+
+   --lightgray: #d3d3d3;
+   --gray: #808080;
+   --gray1: #555;
+   --gray2: #555;
+
+   --black: #000;
+   --bg1: rgba(0, 0, 0, 0.613);
+
+   --orange: #febb02;
+
+   --green: #008009;
+}
+
+body{
+   font-family: Calibri, 'Trebuchet MS', sans-serif;
+   padding: 0;
+   margin: 0;
+   user-select: none;
+   box-sizing: border-box
+}
+/* ................................................ font */
+.font-\[2rem\]{
+   font-size: 2rem;
+}  
+.font-\[12px\]{
+   font-size: 12px;
+}  
+.font-\[14px\]{   
+   font-size: 14px;
+}
+.font-\[18px\]{
+   font-size: 18px;
+}  
+.font-\[20px\]{
+   font-size: 20px;
+}  
+.font-\[24px\]{
+   font-size: 24px;
+}  
+.font-\[30px\]{
+   font-size: 30px;
+}  
+.font-\[50px\]{
+   font-size: 50px;
+}  
+.center{
+   text-align: center;
+}
+.right{
+   text-align: right;
+}
+/* ................................................ width */
+.w-full{
+   width: 100vw;
+}
+.w-fit{
+   width: fit-content;
+}
+.w-max{
+   width: max-content;
+}
+.w-80{
+   width: 80%;
+}
+.w-100{
+   width: 100%;
+}
+.w-\[30px\]{
+   width: 30px;
+}
+.w-\[50px\]{
+   width: 50px;
+}
+.w-\[300px\]{
+   width: 300px;
+}
+.w-\[200px\]{
+   width: 200px;
+}
+.w-1\/3{
+   width: 33.3333333333%;
+}
+.mw-\[1024px\]{
+   max-width: 1024px;
+}
+/* ................................................ height */
+.h-\[80vh\]{
+   height: 80vh;
+}
+.h-full{
+   height: 100vh;
+}
+.h-100{
+   height: 100%;
+}
+.h-\[30px\]{
+   height: 30px;
+}
+.h-\[50px\]{
+   height: 50px;
+}
+.h-\[150px\]{
+   height: 150px;
+}
+.h-\[200px\]{
+   height: 200px;
+}
+.h-\[250px\]{
+   height: 250px;
+}
+.h-fit{
+   height: fit-content;
+}
+.h-max{
+   height: max-content;
+}
+/* ................................................ display */
+.flex, .d-flex{
+   display: flex;
+}
+.flex-col{
+   flex-direction: column;
+}
+.flex-1{
+   flex: 1;
+}
+.flex-2{
+   flex: 2;
+}
+.flex-3{
+   flex: 2;
+}
+.hidden{
+   overflow: hidden;
+}
+.wrap{
+   flex-wrap: wrap;
+}
+/* ................................................ position */
+.fixed{
+   position: fixed !important;
+   top: 0;
+}
+.sticky{
+   position: sticky;
+   /* top: 0; */
+}
+.absolute{
+   position: absolute;
+}
+.relative{
+   position: relative;
+}
+.top-\[0px\]{
+   top: 0px;
+}
+.top-\[10px\]{
+   top: 10px;
+}
+.top-\[20px\]{
+   top: 20px;
+}
+.top-\[50px\]{
+   top: 50px;
+}
+.right-\[0px\], .right-none{
+   right: 0px;
+}
+.right-\[20px\]{
+   right: 20px;
+}
+.bottom-\[-25px\]{
+   bottom: -25px;
+}
+.bottom-\[20px\]{
+   bottom: 20px;
+}
+.bottom-\[10px\]{
+   bottom: 10px;
+}
+.left-\[0px\]{
+   left: 0px;
+}
+.left-\[20px\]{
+   left: 20px;
+}
+.z-1{
+   z-index: 1;
+}
+.z-2{
+   z-index: 2;
+}
+.z-3{
+   z-index: 3;
+}
+.z-999{
+   z-index: 999;
+}
+/* ................................................ display-content */
+.items-center{
+   align-items: center;
+}
+.items-start{
+   align-items: start;
+}
+.justify-start{
+   align-items: start;
+}
+.justify-center{
+   justify-content: center;
+}
+.justify-between{
+   justify-content: space-between;
+}
+.justify-around{
+   justify-content: space-around;
+}
+/* ................................................ gap */
+.gap-\[5px\]{
+   gap: 5px;
+}
+.gap-\[10px\]{
+   gap: 10px;
+}
+.gap-\[20px\]{
+   gap: 20px;
+}
+.gap-\[30px\]{
+   gap: 30px;
+}
+.gap-\[40px\]{
+   gap: 40px;
+}
+.gap-\[50px\]{
+   gap: 50px;
+}
+/* ................................................ font-color */
+.white{
+   color: var(--white);
+}
+.blue{
+   color: var(--blue);
+} 
+.blue1{
+   color: var(--blue1);
+}
+.lightgray{
+   color: var(--lightgray);
+}
+.gray{
+   color: var(--gray);
+}
+.gray1{
+   color: var(--gray1);
+}
+.gray2{
+   color: var(--gray2);
+}
+.green{
+   color: var(--green);
+}
+.black{
+   color: var(--black);
+}
+/* ................................................ bg-color */
+.bg-dark{
+   background-color: var(--black);
+}
+.bg-blue{
+   background-color: var(--blue); 
+}
+.bg-blue1{
+   background-color: var(--blue1);
+}
+.bg-orange{
+   background-color: var(--orange);
+}
+.bg-white{
+   background-color: var(--white);
+}
+.bg-white1{
+   background-color: var(--white1);
+}
+.bg-gray1{
+   background-color: var(--gray1);
+}
+.bg-green{
+   background-color: var(--green);
+}
+.bg-low{
+   background: var(--black);
+   opacity: 0.8;
+}
+
+.bg-1{
+   background-color: var(--bg1);
+}
+/* ................................................ object-fit */
+.cover{
+   object-fit: cover;
+}
+/* ................................................ font-decoration */
+.bold-500{
+   font-weight: 500;
+}
+.bold-300{
+   font-weight: 300;
+}
+.bold-900{
+   font-weight: 900;
+}
+.bold{
+   font-weight: bold;
+}
+.bolder{
+   font-weight: bolder;
+}
+.font-none{
+   text-decoration: none;
+}
+/* ................................................ margin */
+.m-\[10px\]{
+   margin: 10px;
+}
+.m-\[20px\]{
+   margin: 20px;
+}
+.mt-\[20px\]{
+   margin-top: 20px;
+}
+.mt-\[50px\]{
+   margin-top: 50px;
+}
+.mr-\[10px\]{
+   margin-right: 10px;
+}
+.mb-\[10px\]{
+   margin-bottom: 10px;
+}
+.mb-\[20px\]{
+   margin-bottom: 20px;
+}
+.mb-\[100px\]{
+   margin-bottom: 100px;
+}
+.ml-\[20px\]{
+   margin-left: 20px;
+} 
+.my-\[20px\]{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.mx-0{
+   margin-left: 0px;
+   margin-right: 0px;
+}
+.mx-auto{
+   margin-left: auto;
+   margin-right: auto;
+}
+/* ................................................ padding */
+.p-0, .p-none{
+   padding: 0;
+}
+.p-\[3px\]{
+   padding: 3px;
+}
+.p-\[5px\]{
+   padding: 5px;
+}
+.p-\[10px\]{
+   padding: 10px;
+}
+.p-\[20px\]{
+   padding: 20px;
+}
+.p-\[50px\]{
+   padding: 50px;
+}
+.pb-\[50px\]{
+   padding-bottom: 50px;
+}
+.pb-\[75px\]{
+   padding-bottom: 75px;
+}
+.pb-\[100px\]{
+   padding-bottom: 100px;
+}
+.px-none{
+   padding-left: 0;
+   padding-right: 0;
+}
+.px-\[10px\]{
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.px-\[20px\]{
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.py-\[5px\]{
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+.py-\[10px\]{
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.py-\[30px\]{
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+/* ................................................ border */
+.b-none, .rounded-none{
+   border: none;
+}
+.b-yellow{
+   border: 3px solid var(--yellow);
+}
+.b-blue1{
+   border: 1px solid var(--blue1);
+}
+.b-lightgray{
+   border: 1px solid var(--lightgray);
+}
+.rounded-\[5px\]{
+   border-radius: 5px;
+}
+.rounded-\[10px\]{
+   border-radius: 10px;
+}
+/* ................................................ outline */
+.outline-none{
+   outline: none;
+}
+/* ................................................ list-style */
+.list-style-none{
+   list-style: none;
+}
+/* ................................................ cursor */
+.pointer{
+   cursor: pointer;
+}
+/* ................................................ shadow */
+.shadow{
+   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+/* ................................................ transform */
+/* .translateY-\[125px\]{
+   transform: translateY(125px);
+} */
+.translateY-\[25px\]{
+   transform: translateY(25px);
+}
+.translateY-100{
+   transform: translateY(100%);
+}
+/* ................................................ special class style */
+.active{
+   border: 1px solid var(--white);
+   padding: 10px;
+   border-radius: 3px;
+}
+.disabled:disabled{
+   cursor: not-allowed;
+}
+.click{
+   transition: translateY .5s ease-in-out; 
+   transform: translateY(0px);
+}
+.click:active{
+   transition: translateY .5s ease-in-out; 
+   transform: translateY(3px);
+}
+.overlay > img{
+   scale: 1;
+   transition: all .3s ease-in-out;
+}
+.overlay:hover > img{
+   scale: 1.15;
+}
+.list{
+   color: #000;
+   transition: all .3s ease-out;
+}
+.list:hover{
+   color: blue;
+   text-decoration: underline;
+}

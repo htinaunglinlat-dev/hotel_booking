@@ -1,0 +1,76 @@
+// const SearchBoxContainer = ({date, setDate}: SearchBoxContainerProps) => {
+//    const [openDate, setOpenDate] = useState(false);
+//    // const [openOptions, setOpenOptions] = useState(false);
+//    // const [options, setOptions] = useState({
+//    //    adult: 1,
+//    //    children: 0,
+//    //    room: 1,
+//    // })
+//    const [options, dispatch] = useReducer(reducer, initialOptions)
+//    // console.log(date);
+//    return(
+//       <div className="h-[30px] bg-white b-yellow d-flex items-center justify-around py-[10px] px-none rounded-[5px] absolute bottom-[-25px] w-100 mw-[1024px]">
+//          <div className="d-flex items-center gap-[10px]">
+//             <FontAwesomeIcon icon={faBed} className="lightgray" />
+//             <input type="text" placeholder="What are you going?" className="b-none outline-none" />
+//          </div>
+//          <div className="d-flex items-center gap-[10px]">
+//             <FontAwesomeIcon icon={faCalendarDays} className="lightgray" />
+//             {/* <input type="text" placeholder="What are you going?" /> */}
+//             <span className="lightgray pointer" onClick={() => setOpenDate(prev => !prev)}>
+//                {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(date[0].startDate, "MM/dd/yyyy")}`}
+//             </span>
+//             {openDate && (
+//                <DateRange
+//                   editableDateInputs={true}
+//                   onChange={(item: any) => setDate([item.selection])}
+//                   moveRangeOnFirstSelection={false}
+//                   ranges={date}
+//                   className={"absolute top-[50px]"}
+//                />
+//             )}
+//          </div>
+//          <div className="d-flex items-center gap-[10px]">
+//             <FontAwesomeIcon icon={faPerson} className="lightgray" />
+//             <span className="lightgray pointer">{`${options.adult} adult . ${options.children} children . ${options.room} room`}</span>
+//             <div className="bg-white absolute top-[50px] gray shadow rounded-[5px] ">
+//                <div className="w-[200px] flex justify-between m-[10px]">
+//                   <span>Adult</span>
+//                   <div className="d-flex items-center  gap-[10px] black">
+//                      <button type="button" className="w-[30px] h-[30px] blue1 b-blue1 pointer" id="adult"
+//                         onClick={e => dispatch({type: "DECREMENT", value: e.target.id})}
+//                      >-</button>
+//                      <span>{options.adult}</span>
+//                      <button type="button" className="w-[30px] h-[30px] blue1 b-blue1 pointer" id="adult"
+//                         onClick={e => dispatch({type: "INCREMENT", value: e.target.id})}
+//                      >+</button>
+//                   </div>
+//                </div>
+//                <div className="w-[200px] flex justify-between m-[10px]">
+//                   <span>Children</span>
+//                   <div className="d-flex items-center  gap-[10px] black">
+//                      <button type="button" className="w-[30px] h-[30px] blue1 b-blue1 pointer"
+//                      >-</button>
+//                      <span>0</span>
+//                      <button type="button" className="w-[30px] h-[30px] blue1 b-blue1 pointer"
+//                      >+</button>
+//                   </div>
+//                </div>
+//                <div className="w-[200px] flex justify-between m-[10px]">
+//                   <span>Room</span>
+//                   <div className="d-flex items-center  gap-[10px] black">
+//                      <button type="button" className="w-[30px] h-[30px] blue1 b-blue1 pointer"
+//                      >-</button>
+//                      <span>1</span>
+//                      <button type="button" className="w-[30px] h-[30px] blue1 b-blue1 pointer"
+//                      >+</button>
+//                   </div>
+//                </div>
+//             </div>
+//          </div>
+//          <div className="d-flex items-center gap-[10px]">
+//             <button className="white py-[10px] bg-blue1 b-none pointer">Search</button>
+//          </div>
+//       </div>
+//    )
+// }
